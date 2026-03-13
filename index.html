@@ -1,11 +1,219 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Haripatra — Developer & Creative</title>
+
+  <!-- ═══════════════════════════════════════════
+       PRIMARY SEO META TAGS
+  ═══════════════════════════════════════════ -->
+  <title>Haripatra — Full-Stack Developer & Creative Director | Mumbai</title>
+  <meta name="description" content="Harishankar Patra (Haripatra) — self-taught Full-Stack Developer and Creative Director based in Mumbai. Available for freelance, remote & local projects in web development, UI/UX design, video editing, and content creation."/>
+  <meta name="keywords" content="Haripatra, Harishankar Patra, Full Stack Developer Mumbai, Freelance Developer Mumbai, React Developer, Node.js Developer, UI UX Designer Mumbai, Video Editor Mumbai, Content Creator Mumbai, Web Developer India"/>
+  <meta name="author" content="Harishankar Patra"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="language" content="English"/>
+  <meta name="revisit-after" content="7 days"/>
+  <meta name="theme-color" content="#ff4d00"/>
+  <link rel="canonical" href="https://haripatra.dev/"/>
+
+  <!-- ═══════════════════════════════════════════
+       OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+  ═══════════════════════════════════════════ -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://haripatra.dev/"/>
+  <meta property="og:title" content="Haripatra — Full-Stack Developer & Creative Director | Mumbai"/>
+  <meta property="og:description" content="Self-taught builder bridging clean code and compelling visuals. Full-stack web apps, brand design, video editing & content strategy — based in Mumbai, open to remote."/>
+  <meta property="og:image" content="https://haripatra.dev/og-image.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Haripatra — Full-Stack Developer and Creative Director Portfolio"/>
+  <meta property="og:site_name" content="Haripatra Portfolio"/>
+  <meta property="og:locale" content="en_IN"/>
+
+  <!-- ═══════════════════════════════════════════
+       TWITTER / X CARD
+  ═══════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Haripatra — Full-Stack Developer & Creative Director | Mumbai"/>
+  <meta name="twitter:description" content="Self-taught builder bridging clean code and compelling visuals. Full-stack web apps, brand design, video & content — Mumbai, open to remote."/>
+  <meta name="twitter:image" content="https://haripatra.dev/og-image.jpg"/>
+  <meta name="twitter:image:alt" content="Haripatra Portfolio"/>
+  <meta name="twitter:creator" content="@hariforedit"/>
+  <meta name="twitter:site" content="@hariforedit"/>
+
+  <!-- ═══════════════════════════════════════════
+       SECURITY META TAGS
+  ═══════════════════════════════════════════ -->
+  <!-- Prevents clickjacking by blocking iframe embedding -->
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
+  <!-- Prevents MIME-type sniffing attacks -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff"/>
+  <!-- Forces HTTPS for 1 year (HSTS — apply on server too for full effect) -->
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains"/>
+  <!-- Controls referrer information sent when navigating away -->
+  <meta name="referrer" content="strict-origin-when-cross-origin"/>
+  <!-- Content Security Policy — adjust if you add more external resources -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https:;
+    connect-src 'self';
+    frame-ancestors 'self';
+    base-uri 'self';
+    form-action 'self';
+  "/>
+  <!-- Prevents XSS by enabling browser's built-in filter -->
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block"/>
+  <!-- Controls Permissions/Feature Policy -->
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()"/>
+
+  <!-- ═══════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD (Google Rich Results)
+  ═══════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://haripatra.dev/#person",
+        "name": "Harishankar Patra",
+        "alternateName": ["Haripatra", "Hari Patra"],
+        "url": "https://haripatra.dev",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://haripatra.dev/og-image.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "description": "Self-taught Full-Stack Developer and Creative Director based in Mumbai, India. Specialising in React.js, Node.js, UI/UX design, video editing, and content creation.",
+        "jobTitle": ["Full-Stack Developer", "Creative Director", "UI/UX Designer"],
+        "knowsAbout": [
+          "React.js", "Node.js", "MongoDB", "MySQL", "JavaScript", "Python",
+          "UI/UX Design", "Video Editing", "Content Creation", "Social Media Strategy",
+          "Adobe Premiere Pro", "Tailwind CSS", "REST API"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mumbai",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        "email": "haripatra1702@gmail.com",
+        "sameAs": [
+          "https://linkedin.com/in/haripatra",
+          "https://www.instagram.com/hariforedit/"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance / Self-Employed"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://haripatra.dev/#website",
+        "url": "https://haripatra.dev",
+        "name": "Haripatra — Portfolio",
+        "description": "Portfolio of Harishankar Patra — Full-Stack Developer and Creative Director from Mumbai.",
+        "publisher": { "@id": "https://haripatra.dev/#person" },
+        "inLanguage": "en-IN",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://haripatra.dev/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://haripatra.dev/#profilepage",
+        "url": "https://haripatra.dev",
+        "name": "Haripatra — Full-Stack Developer & Creative Director | Mumbai",
+        "isPartOf": { "@id": "https://haripatra.dev/#website" },
+        "about": { "@id": "https://haripatra.dev/#person" },
+        "description": "Portfolio showcasing full-stack development projects, creative direction, video editing, and content creation work.",
+        "inLanguage": "en-IN",
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-07-01"
+      },
+      {
+        "@type": "ItemList",
+        "name": "Haripatra — Projects",
+        "url": "https://haripatra.dev/#projects",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Event Management Platform",
+              "description": "Full-stack platform for discovering and managing tech events in Mumbai. Features event listings, RSVP functionality, and community engagement tools.",
+              "applicationCategory": "WebApplication",
+              "author": { "@id": "https://haripatra.dev/#person" },
+              "programmingLanguage": ["JavaScript", "React.js", "Node.js", "MongoDB"]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Brand Creative Media",
+              "description": "End-to-end brand identity creation through visual storytelling and media production.",
+              "author": { "@id": "https://haripatra.dev/#person" },
+              "url": "https://www.instagram.com/hariforedit/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Hackathon: Animal Advocacy AI Platform",
+              "description": "Code 4 Compassion — Unified platform to automate social media content creation, scoring, and scheduling for animal advocacy organizations using AI.",
+              "applicationCategory": "WebApplication",
+              "author": { "@id": "https://haripatra.dev/#person" },
+              "award": "Code 4 Compassion Hackathon Participant"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://haripatra.dev/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════
+       FAVICON (add your actual favicon files)
+  ═══════════════════════════════════════════ -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+
+  <!-- ═══════════════════════════════════════════
+       PERFORMANCE — PRECONNECT
+  ═══════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
   <style>
     :root {
       --bg: #0a0a0a;
@@ -58,7 +266,6 @@
       opacity: 0.5;
     }
 
-    /* Noise texture overlay */
     body::before {
       content: '';
       position: fixed;
@@ -69,7 +276,6 @@
       opacity: 0.4;
     }
 
-    /* NAV */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -102,16 +308,16 @@
     }
     .nav-links a:hover { color: var(--accent); }
 
-    /* HERO */
     #hero {
       min-height: 100vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
-      padding: 0 3rem;
+      padding: 0 5rem;
       padding-top: 80px;
       position: relative;
       overflow: hidden;
+      max-width: 100%;
     }
 
     .hero-bg {
@@ -290,7 +496,6 @@
       margin-top: 2px;
     }
 
-    /* SECTION COMMON */
     section {
       padding: 7rem 3rem;
       max-width: 1400px;
@@ -320,7 +525,6 @@
       margin-bottom: 4rem;
     }
 
-    /* SKILLS */
     #skills { background: var(--surface); max-width: 100%; padding: 7rem 3rem; }
     #skills > .inner { max-width: 1400px; margin: 0 auto; }
 
@@ -376,7 +580,6 @@
       text-transform: uppercase;
     }
 
-    /* PROJECTS */
     .projects-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -466,7 +669,6 @@
       border-radius: 50%;
     }
 
-    /* ABOUT */
     #about { max-width: 1400px; }
     .about-grid {
       display: grid;
@@ -557,7 +759,6 @@
     }
     .achievement-item strong { color: var(--text); display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.2rem; }
 
-    /* CONTACT */
     #contact { max-width: 100%; padding: 7rem 3rem; background: var(--card); }
     #contact > .inner { max-width: 1400px; margin: 0 auto; }
 
@@ -625,7 +826,6 @@
     .contact-link:hover .cl-handle { color: rgba(10,10,10,0.7); }
     .cl-arrow { font-size: 1.2rem; }
 
-    /* FOOTER */
     footer {
       padding: 2rem 3rem;
       border-top: 1px solid var(--border);
@@ -648,12 +848,10 @@
     }
     .footer-mark span { color: var(--accent); }
 
-    /* SCROLLBAR */
     ::-webkit-scrollbar { width: 3px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--accent); }
 
-    /* ANIMATIONS */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
@@ -667,7 +865,6 @@
       50% { transform: translateY(-12px); }
     }
 
-    /* Reveal on scroll */
     .reveal {
       opacity: 0;
       transform: translateY(40px);
@@ -678,7 +875,6 @@
       transform: translateY(0);
     }
 
-    /* MOBILE */
     @media (max-width: 900px) {
       nav { padding: 1.2rem 1.5rem; }
       .nav-links { gap: 1.5rem; }
@@ -697,14 +893,13 @@
 </head>
 <body>
 
-  <!-- Custom Cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
   <!-- NAV -->
-  <nav>
-    <a href="#" class="nav-logo">HARI<span>.</span></a>
-    <ul class="nav-links">
+  <nav aria-label="Main navigation">
+    <a href="#" class="nav-logo" aria-label="Haripatra Home">HARI<span>.</span></a>
+    <ul class="nav-links" role="list">
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Work</a></li>
       <li><a href="#about">About</a></li>
@@ -713,9 +908,9 @@
   </nav>
 
   <!-- HERO -->
-  <section id="hero" style="max-width:100%; padding-left:5rem; padding-right:5rem;">
-    <div class="hero-bg"></div>
-    <div class="hero-lines"></div>
+  <section id="hero" aria-label="Hero — Introduction">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-lines" aria-hidden="true"></div>
     <div class="hero-left">
       <div class="hero-tag">Mumbai, India — Open to Remote</div>
       <h1 class="hero-name">
@@ -732,7 +927,7 @@
         <a href="#contact" class="btn btn-ghost">Let's Talk</a>
       </div>
     </div>
-    <div class="hero-right">
+    <div class="hero-right" aria-hidden="true">
       <div class="hero-visual">
         <div class="hero-card-main">
           <div class="hero-card-label">Currently available for</div>
@@ -752,13 +947,13 @@
   </section>
 
   <!-- SKILLS -->
-  <div id="skills">
+  <div id="skills" role="region" aria-label="Skills and Capabilities">
     <div class="inner">
       <div class="section-label reveal">Capabilities</div>
       <h2 class="section-title reveal">WHAT I<br>BRING</h2>
       <div class="skills-grid reveal">
         <div class="skill-block">
-          <span class="skill-icon">⚡</span>
+          <span class="skill-icon" aria-hidden="true">⚡</span>
           <div class="skill-name">FRONT-END</div>
           <div class="skill-tags">
             <span class="skill-tag">React.js</span>
@@ -768,7 +963,7 @@
           </div>
         </div>
         <div class="skill-block">
-          <span class="skill-icon">🔧</span>
+          <span class="skill-icon" aria-hidden="true">🔧</span>
           <div class="skill-name">BACK-END</div>
           <div class="skill-tags">
             <span class="skill-tag">Node.js</span>
@@ -778,7 +973,7 @@
           </div>
         </div>
         <div class="skill-block">
-          <span class="skill-icon">💻</span>
+          <span class="skill-icon" aria-hidden="true">💻</span>
           <div class="skill-name">LANGUAGES</div>
           <div class="skill-tags">
             <span class="skill-tag">JavaScript</span>
@@ -787,7 +982,7 @@
           </div>
         </div>
         <div class="skill-block">
-          <span class="skill-icon">🎬</span>
+          <span class="skill-icon" aria-hidden="true">🎬</span>
           <div class="skill-name">VIDEO</div>
           <div class="skill-tags">
             <span class="skill-tag">Adobe Premiere</span>
@@ -796,7 +991,7 @@
           </div>
         </div>
         <div class="skill-block">
-          <span class="skill-icon">🎨</span>
+          <span class="skill-icon" aria-hidden="true">🎨</span>
           <div class="skill-name">DESIGN</div>
           <div class="skill-tags">
             <span class="skill-tag">Photoshop</span>
@@ -805,7 +1000,7 @@
           </div>
         </div>
         <div class="skill-block">
-          <span class="skill-icon">📲</span>
+          <span class="skill-icon" aria-hidden="true">📲</span>
           <div class="skill-name">CONTENT</div>
           <div class="skill-tags">
             <span class="skill-tag">Instagram</span>
@@ -819,66 +1014,63 @@
   </div>
 
   <!-- PROJECTS -->
-  <section id="projects" style="max-width:1400px;">
+  <section id="projects" aria-label="Projects — Selected Work">
     <div class="section-label reveal">Selected Work</div>
     <h2 class="section-title reveal">PROJECTS</h2>
     <div class="projects-grid reveal">
-
-      <!-- Featured -->
-      <div class="project-card featured">
+      <article class="project-card featured">
         <div>
-          <div class="project-num">01</div>
-          <div class="project-name">EVENT MANAGEMENT PLATFORM</div>
+          <div class="project-num" aria-hidden="true">01</div>
+          <h3 class="project-name">EVENT MANAGEMENT PLATFORM</h3>
           <p class="project-desc">
             A full-stack platform for discovering and managing tech events in Mumbai.
             Features event listings, RSVP functionality, and community engagement tools
             — connecting local tech communities in one place.
           </p>
-          <div class="project-tech">
+          <div class="project-tech" aria-label="Technologies used">
             <span>React.js</span><span>Node.js</span><span>MongoDB</span>
             <span>Tailwind CSS</span><span>REST API</span><span>Vercel</span><span>Render</span>
           </div>
           <a href="#contact" class="btn btn-primary">View Project →</a>
         </div>
-        <div class="project-visual">
+        <div class="project-visual" aria-hidden="true">
           <div class="project-visual-grid"></div>
           <div class="project-visual-inner">EM</div>
           <div class="project-dot" style="top:30%;left:25%;"></div>
           <div class="project-dot" style="top:60%;right:20%;background:var(--accent2);"></div>
           <div class="project-dot" style="bottom:20%;left:50%;background:#fff;width:4px;height:4px;"></div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-num">02</div>
-        <div class="project-name">BRAND CREATIVE MEDIA</div>
+      <article class="project-card">
+        <div class="project-num" aria-hidden="true">02</div>
+        <h3 class="project-name">BRAND CREATIVE MEDIA</h3>
         <p class="project-desc">
           End-to-end brand identity creation through visual storytelling and media production.
           Covering full creative pipeline from concept ideation to final delivery.
         </p>
-        <div class="project-tech">
+        <div class="project-tech" aria-label="Technologies used">
           <span>Premiere Pro</span><span>VN Editor</span><span>Canva</span><span>Photoshop</span>
         </div>
-        <a href="https://www.instagram.com/hariforedit/" target="_blank" class="btn btn-ghost" style="margin-top:0.5rem;">@hariforedit ↗</a>
-      </div>
+        <a href="https://www.instagram.com/hariforedit/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="margin-top:0.5rem;">@hariforedit ↗</a>
+      </article>
 
-      <div class="project-card">
-        <div class="project-num">03</div>
-        <div class="project-name">HACKATHON: ANIMAL ADVOCACY AI</div>
+      <article class="project-card">
+        <div class="project-num" aria-hidden="true">03</div>
+        <h3 class="project-name">HACKATHON: ANIMAL ADVOCACY AI</h3>
         <p class="project-desc">
           Code 4 Compassion — Built a unified platform to automate social media content
           creation, scoring, and scheduling for animal advocacy organizations using AI.
         </p>
-        <div class="project-tech">
+        <div class="project-tech" aria-label="Technologies used">
           <span>AI/ML</span><span>Social Automation</span><span>Full-Stack</span>
         </div>
-      </div>
-
+      </article>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" style="max-width:1400px;">
+  <section id="about" aria-label="About Harishankar Patra">
     <div class="section-label reveal">Background</div>
     <h2 class="section-title reveal">ABOUT<br>ME</h2>
     <div class="about-grid reveal">
@@ -897,7 +1089,7 @@
           Currently available for <strong>freelance, remote, and local opportunities</strong>
           in Mumbai and beyond.
         </p>
-        <div class="about-stats">
+        <div class="about-stats" aria-label="Stats">
           <div class="about-stat">
             <div class="about-stat-num">5+</div>
             <div class="about-stat-label">Projects Shipped</div>
@@ -954,7 +1146,7 @@
   </section>
 
   <!-- CONTACT -->
-  <div id="contact">
+  <div id="contact" role="region" aria-label="Contact Haripatra">
     <div class="inner">
       <div class="contact-layout reveal">
         <div>
@@ -969,36 +1161,36 @@
             Whether you need a dev, a creative, or both — let's talk.
           </p>
         </div>
-        <div class="contact-links">
+        <address class="contact-links" style="font-style:normal;">
           <a href="mailto:haripatra1702@gmail.com" class="contact-link">
             <div>
               <div class="cl-platform">EMAIL</div>
               <div class="cl-handle">haripatra1702@gmail.com</div>
             </div>
-            <div class="cl-arrow">→</div>
+            <div class="cl-arrow" aria-hidden="true">→</div>
           </a>
-          <a href="tel:9021454791" class="contact-link">
+          <a href="tel:+919021454791" class="contact-link">
             <div>
               <div class="cl-platform">PHONE</div>
-              <div class="cl-handle">...</div>
+              <div class="cl-handle">+91 90214 54791</div>
             </div>
-            <div class="cl-arrow">→</div>
+            <div class="cl-arrow" aria-hidden="true">→</div>
           </a>
-          <a href="https://linkedin.com/in/haripatra" target="_blank" class="contact-link">
+          <a href="https://linkedin.com/in/haripatra" target="_blank" rel="noopener noreferrer" class="contact-link">
             <div>
               <div class="cl-platform">LINKEDIN</div>
               <div class="cl-handle">linkedin.com/in/haripatra</div>
             </div>
-            <div class="cl-arrow">→</div>
+            <div class="cl-arrow" aria-hidden="true">→</div>
           </a>
-          <a href="https://www.instagram.com/hariforedit/" target="_blank" class="contact-link">
+          <a href="https://www.instagram.com/hariforedit/" target="_blank" rel="noopener noreferrer" class="contact-link">
             <div>
               <div class="cl-platform">INSTAGRAM</div>
               <div class="cl-handle">@hariforedit</div>
             </div>
-            <div class="cl-arrow">→</div>
+            <div class="cl-arrow" aria-hidden="true">→</div>
           </a>
-        </div>
+        </address>
       </div>
     </div>
   </div>
@@ -1051,7 +1243,6 @@
       entries.forEach(e => {
         if (e.isIntersecting) {
           e.target.classList.add('visible');
-          // stagger children
           const kids = e.target.children;
           Array.from(kids).forEach((k, i) => {
             k.style.transitionDelay = (i * 0.08) + 's';
