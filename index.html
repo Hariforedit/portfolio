@@ -56,7 +56,7 @@
   <meta http-equiv="X-Content-Type-Options" content="nosniff"/>
   <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains"/>
   <meta name="referrer" content="strict-origin-when-cross-origin"/>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';"/>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.vercel-insights.com https://vercel.live; frame-ancestors 'self'; base-uri 'self'; form-action 'self';"/>
   <meta http-equiv="X-XSS-Protection" content="1; mode=block"/>
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()"/>
 
@@ -603,6 +603,14 @@
       #skills, #contact { padding: 5rem 1.5rem; }
     }
   </style>
+
+  <!-- ═══════════════════════════════════════════════════════
+       VERCEL SPEED INSIGHTS
+  ═══════════════════════════════════════════════════════ -->
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
 
